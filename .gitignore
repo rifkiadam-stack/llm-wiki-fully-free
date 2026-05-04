@@ -1,0 +1,34 @@
+# Wiki content (personal knowledge - do not commit)
+wiki/sources/*
+!wiki/sources/.gitkeep
+wiki/entities/*
+!wiki/entities/.gitkeep
+wiki/concepts/*
+!wiki/concepts/.gitkeep
+wiki/queries/*
+!wiki/queries/.gitkeep
+wiki/synthesis/*
+!wiki/synthesis/.gitkeep
+wiki/comparisons/*
+!wiki/comparisons/.gitkeep
+
+# Raw source documents (private/copyrighted)
+raw/sources/*
+!raw/sources/.gitkeep
+raw/assets/*
+!raw/assets/.gitkeep
+
+# Wiki snapshot (contains personal data)
+wiki_snapshot.zip
+
+# Internal project docs
+PRD_*.md
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Obsidian workspace (user-specific, not vault config)
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json

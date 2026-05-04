@@ -1,0 +1,9 @@
+{
+  "useMarkdownLinks": false,
+  "newFileLocation": "folder",
+  "newFileFolderPath": "wiki",
+  "attachmentFolderPath": "raw/assets",
+  "showUnsupportedFiles": false,
+  "alwaysUpdateLinks": true,
+  "promptDelete": true
+}
