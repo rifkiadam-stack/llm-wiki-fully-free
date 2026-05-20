@@ -66,9 +66,9 @@ STEP 4: Execute Suggested Updates (optional but recommended)
 ├── Open those files in Obsidian and add the suggested content
 └── For long suggestions, ask Gemini to write the exact paragraph to paste
 
-STEP 5: Update wiki_snapshot.zip
-├── Right-click the wiki/ folder → Compress to ZIP
-├── Replace the old wiki_snapshot.zip
+STEP 5: Update wiki_snapshot.rar
+├── Right-click the wiki/ folder → Compress to RAR
+├── Replace the old wiki_snapshot.rar
 └── The Gem now has access to your latest knowledge
 ```
 
@@ -96,7 +96,7 @@ Process the attached file according to WORKFLOW 1 in GEMINI.md.
 - [ ] Log entry appended to `wiki/log.md`
 - [ ] (Optional) Related pages updated based on Gemini's suggestions
 - [ ] (Optional) Concept/Entity page created if Gemini recommended it
-- [ ] `wiki_snapshot.zip` updated
+- [ ] `wiki_snapshot.rar` updated
 
 ---
 
