@@ -29,10 +29,24 @@
       }
     },
     {
-      "query": "path:wiki/queries OR path:wiki/synthesis OR path:wiki/comparisons",
+      "query": "path:wiki/queries",
       "color": {
         "a": 1,
         "rgb": 16776960
+      }
+    },
+    {
+      "query": "path:wiki/synthesis",
+      "color": {
+        "a": 1,
+        "rgb": 11560703
+      }
+    },
+    {
+      "query": "path:wiki/comparisons",
+      "color": {
+        "a": 1,
+        "rgb": 16735895
       }
     }
   ],
