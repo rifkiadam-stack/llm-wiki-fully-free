@@ -22,7 +22,7 @@ Instead of retrieving from raw documents at query time, the LLM incrementally bu
 ┌──────────────────────────────────────────────────────────────┐
 │                     Google Drive (Cloud)                     │
 │  ┌─────────────┐  ┌──────────┐  ┌────────────────────────┐  │
-│  │ raw/sources/ │  │ wiki/    │  │ wiki_snapshot.zip      │  │
+│  │ raw/sources/ │  │ wiki/    │  │ wiki_snapshot.rar      │  │
 │  │ (PDFs, docs) │  │ (.md)    │  │ (daily snapshot)       │  │
 │  └──────┬───────┘  └────┬─────┘  └───────────┬────────────┘  │
 │         │               │                    │               │
@@ -39,9 +39,9 @@ Instead of retrieving from raw documents at query time, the LLM incrementally bu
 |------|------|-----|
 | **Google Drive** | Storage & Sync | Auto-syncs local ↔ cloud. Gemini reads files directly from Drive |
 | **Gemini Web UI** | Brain / Maintainer | Reads sources, generates wiki pages, suggests cross-references |
-| **Gemini Gem** | Persistent Agent | Pre-configured with GEMINI.md + wiki_snapshot.zip for instant queries |
+| **Gemini Gem** | Persistent Agent | Pre-configured with GEMINI.md + wiki_snapshot.rar for instant queries |
 | **Obsidian** | Viewer & Editor | Visualizes `[[wikilinks]]` as a knowledge graph, paste Gemini output here |
-| **wiki_snapshot.zip** | Full Knowledge Snapshot | Daily ZIP of the entire `wiki/` folder, attached to Gem for deep queries |
+| **wiki_snapshot.rar** | Full Knowledge Snapshot | Daily RAR of the entire `wiki/` folder, attached to Gem for deep queries |
 
 ## ✅ Advantages
 
@@ -55,8 +55,8 @@ Instead of retrieving from raw documents at query time, the LLM incrementally bu
 
 - **Semi-Automated (Human-in-the-Loop)** — You must manually copy Gemini's output and paste it into Obsidian. Gemini cannot write files to your Drive directly
 - **Manual File Selection** — Gemini Web UI cannot browse your Drive folders autonomously. You must attach files (like `index.md`) manually when prompting
-- **ZIP Snapshot Grows Over Time** — As your wiki accumulates hundreds of pages, `wiki_snapshot.zip` will grow larger. This may eventually approach Gemini's file upload limits
-- **ZIP Must Be Manually Updated** — After adding new wiki pages, you need to re-create `wiki_snapshot.zip` (right-click `wiki/` folder → Compress) to keep the Gem's knowledge current
+- **RAR Snapshot Grows Over Time** — As your wiki accumulates hundreds of pages, `wiki_snapshot.rar` will grow larger. This may eventually approach Gemini's file upload limits
+- **RAR Must Be Manually Updated** — After adding new wiki pages, you need to re-create `wiki_snapshot.rar` (right-click `wiki/` folder → Compress to RAR) to keep the Gem's knowledge current
 
 ## 📁 Directory Structure
 
@@ -66,7 +66,7 @@ My_LLM_WIKI/
 ├── purpose.md             ← Goals, scope, and key questions of the wiki
 ├── schema.md              ← Rules for file naming, frontmatter, and page types
 ├── README.md              ← This file
-├── wiki_snapshot.zip      ← Daily ZIP snapshot of wiki/ (attached to Gem)
+├── wiki_snapshot.rar      ← Daily RAR snapshot of wiki/ (attached to Gem)
 ├── raw/
 │   ├── sources/           ← Raw, immutable source documents (PDFs, articles)
 │   └── assets/            ← Images and media
@@ -91,7 +91,7 @@ My_LLM_WIKI/
 3. Gemini generates: **Source Summary** + **Suggested Updates** + **Index Entry** + **Log Entry**
 4. Copy-paste each output to the correct file in Obsidian
 5. (Optional) If Gemini suggests creating a Concept/Entity page, approve it
-6. Re-create `wiki_snapshot.zip` to update the Gem's knowledge
+6. Re-create `wiki_snapshot.rar` to update the Gem's knowledge
 
 ### Loop 2: Query → Save (Preserve Insights)
 1. Ask Gemini a question via the Gem
@@ -120,16 +120,16 @@ My_LLM_WIKI/
    Your operating instructions are in the attached GEMINI.md.
    Your scope and goals are in purpose.md.
    The content catalog is in index.md.
-   The full knowledge base is in wiki_snapshot.zip.
+   The full knowledge base is in wiki_snapshot.rar.
    When processing a new source, follow WORKFLOW 1 in GEMINI.md.
-   When answering questions, search wiki_snapshot.zip contents only.
+   When answering questions, search wiki_snapshot.rar contents only.
    NEVER use .md extension in wikilinks. Use [[page_name]], NOT [[page_name.md]].
    ```
 4. Under **Knowledge**, attach these 4 files from your Drive:
    - `GEMINI.md`
    - `purpose.md`
    - `wiki/index.md`
-   - `wiki_snapshot.zip`
+   - `wiki_snapshot.rar`
 5. Save the Gem
 
 ### Step 3: Your First Ingest
