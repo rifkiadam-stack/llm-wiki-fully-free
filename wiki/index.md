@@ -44,12 +44,30 @@ updated: 2026-05-03
 
 ---
 
-## Queries & Synthesis
+## Comparisons
 
-*(Saved answers, cross-source analyses, comparisons)*
+*(Side-by-side comparisons of concepts/entities)*
 
-<!-- Add entries here as query/synthesis pages are created -->
-<!-- Format: - [[page_name]] — Description | type: query/synthesis/comparison -->
+<!-- Add entries here as comparison pages are created -->
+<!-- Format: - [[page_name]] — Description | type: comparison -->
+
+---
+
+## Synthesis
+
+*(Cross-source analyses combining multiple sources)*
+
+<!-- Add entries here as synthesis pages are created -->
+<!-- Format: - [[page_name]] — Description | type: synthesis -->
+
+---
+
+## Queries
+
+*(Saved answers from a Q&A session)*
+
+<!-- Add entries here as query pages are created -->
+<!-- Format: - [[page_name]] — Description | type: query -->
 
 ---
 
